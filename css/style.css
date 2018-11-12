@@ -1,9 +1,21 @@
-body {
+body 
+{
     background-color: #99994d;
 }
-h1 {
+h1 
+{
+	
     color: #444422;
 }
-p {
+p 
+{
     color: white;
+}
+a 
+{
+	color: #ff8000;
+}
+footer 
+{
+	color: #999966;
 }
