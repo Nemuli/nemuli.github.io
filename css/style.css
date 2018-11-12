@@ -100,11 +100,11 @@ body{
 }
 #topmenu a:hover{
 	color:#ffffff;
-	background-color: #B52E10;
+	background-color: #99cc00;
 }
 #topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
 	color:#FFFFFF;
-	background-color: #B42D0F;
+	background-color: #99cc00;
 }
 
 /*Content*/
