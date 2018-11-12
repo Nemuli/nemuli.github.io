@@ -1,6 +1,8 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <body>
+
+
 <title>Helmi's Page</title>
  <link href="css/style.css" rel="stylesheet" type="text/css">
  
@@ -33,4 +35,159 @@
 
 
 </body>
+</html>-->
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+  <head>
+    <title>Helmi's page</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script>
+function validateForm()
+{
+if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value=="")
+{
+alert("Name must be filled out");
+return false;
+}
+if (document.forms["myForm"]["phone"].value==null || document.forms["myForm"]["phone"].value=="")
+{
+alert("Phone must be filled out");
+return false;
+}
+if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value=="")
+{
+alert("Email must be filled out");
+return false;
+}
+return true;
+}
+</script>
+  </head>
+  <body>
+    <div id="wrap">     
+      <div id="topbar">
+  <div id="menus">
+  <ul id="topmenu">
+<li  class="active"><a href="#">Home</a>
+</li>
+<li><a href="#table">Image</a></span>
+</li>
+<li><a href="#create">HTML5</a>
+</li>
+<li><a href="#">Products</a>
+</li>
+<li><a href="#contactus">Forms</a>
+</li>
+</ul>
+</div>
+</div>
+  <div id="header">
+    
+</div>
+
+<div id="content">
+<div id="mainpage">
+   <h1> Introduction to HTML5 - Week 39 </h1>
+    <h2> What is HTML5? </h2>
+    <p>Liirum laarum.</p>
+    <h2> Liirum laarum. </h2>
+    Liirum laarum.
+    <ul>
+      <li><b>Liirum laarum. - </b>Liirum laarum.</li>
+        <li><b>Liirum laarum. - </b> Liirum laarum.
+          </li>
+         <li> <b>Liirum laarum. -</b> Liirum laarum.
+           </li> 
+             <li> <bLiirum laarum. - </b> Liirum laarum. </li>
+              <li> <b>Liirum laarum. - </b>
+             Liirum laarum.
+             </li>
+              <li><b> Liirum laarum. - </b> Liirum laarum. </li>
+             <li> <b>Liirum laarum.  </b> Liirum laarum.</li>
+      </ul>
+       <h3>Liirum laarum. </h3>
+    <h2 id="create"> Liirum laarum. </h2>
+    <ol>
+      <li> Liirum laarum.  </li>
+      <li> Liirum laarum. </li>
+      <p>Liirum laarum.</p>
+      <li> Liirum laarum. </li>
+      <li>Liirum laarum. </li>
+     </ol>
+ <h2 > Liirum laarum. </h2>
+    <ol>
+    <li> Liirum laarum. </li>
+      <li> Liirum laarum. </li>
+    </ol>
+    <h2> Liirum laarum. </h2> 
+  <h2 id="table">Liirum laarum. </h2>
+  
+  <table>
+    <tr>
+      <th colspan="2"> Name </th>
+   
+      <th> Age </th>
+      </tr>
+    <tr>
+      <td> Will </td>
+      <td> Smith </td>
+      <td> 50 </td>
+    </tr>
+      <tr>
+      <td> John </td>
+      <td> Henrikson </td>
+      <td> 20 </td>
+    </tr>
+    </table>
+  
+  <h2 id="contactus"> Contact Us </h2>
+  <form>
+    First Name: <input type="text" name="fname" > <br>
+     Last Name: <input type="text" name="lname"><br>
+    Gender: <input type="radio" name="gender" value="male" checked> Male <br>
+    <input type="radio" name="gender" value="female" > Female <br>
+    <input type="radio" name="gender" value="other" > Other <br>
+     E-mail:<input type="email" name="email"> <br>
+    
+ Salutation: <select name=“salutation”>
+<option>Dr</option>
+<option>Mr</option>
+<option>Mrs</option>
+<option>Miss</option>
+<option>Ms</option>
+</select>
+<br/><br/>
+Favorite Sport: <select name=“sport”>
+<option>Baseball</option>
+<option>Basketball</option>
+<option>Football</option>
+<option>Hockey</option>
+    <input type="submit" value="Submit">
+    </form>
+    <h2>Form Validation Example</h2>
+    
+
+<form name="myForm" onsubmit="return validateForm()" >
+Name: <input type="text" name="name" /><br/>
+Phone: <input type="text" name="phone" /><br/>
+E-mail: <input type="text" name="email" /><br/>
+<input type="submit" value="Click to Submit" />
+</form>
+<h2>Integrating video into your web page</h2>
+    <video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+    <h2> Integrating youtube video into your web page </h2>
+    <iframe width="460" height="215" src="https://www.youtube.com/embed/b6hRyQMBbE8?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </div>
+  <div id="footer">
+<p>Copyright &copy;
+<script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script>
+</p>
+  </div>
+    </div>
+  </body>
 </html>

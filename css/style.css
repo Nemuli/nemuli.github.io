@@ -1,4 +1,4 @@
-body 
+/* body 
 {
     background-color: #99994d;
 }
@@ -27,7 +27,6 @@ header {
     color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
 nav {
     float: left;
     width: 300px;
@@ -36,7 +35,7 @@ nav {
 	height: 300px;
 }
 
-/* Style the list inside the menu */
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -51,10 +50,136 @@ article {
 	margin-left: 20px;
 }
 
-/* Style the footer */
+
 footer {
     background-color: #444422;
     padding: 10px;
     text-align: center;
     color: white;
+}*/
+body{
+	background-color:#99994d;
+	}
+#wrap{
+	width:699px;
+	margin:0px auto 15px auto;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+}
+
+#header{
+	height:242px;
+	background:url("https://github.com/dipaish/www_dkc/blob/master/images/header.png?raw=true") no-repeat left top;
+	clear: both;
+}
+/*Top Menu*/
+#topmenu {
+	display:block;
+	list-style:none;
+	padding:0 0px 0px 278px;
+	float: right;
+	width: 415px;
+	background-color: #444422;
+	position: fixed;
+}
+#topmenu li {
+	display:inline;
+}
+#topmenu a {
+	display:block;
+	float:left;
+	height:28px;
+	margin:0px 0px 0px0px;
+	text-decoration:none;
+	padding:9px 15px 0px 15px;
+	text-align:center;
+}
+#topmenu a, #topmenu a:visited, #topmenu a:active {
+	color:#FFFFFF;
+}
+#topmenu a:hover{
+	color:#ffffff;
+	background-color: #B52E10;
+}
+#topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
+	color:#FFFFFF;
+	background-color: #B42D0F;
+}
+
+/*Content*/
+#content {
+	background-color: #FFFFFF;
+}
+#mainpage {
+	width:700px;
+	float:left;
+	padding:5px 5px 5px 0px;
+	height:auto
+}
+#mainpage p {
+	line-height:22px;
+	margin:10px 0px 22px 0px;
+	text-align: justify;
+}
+#mainpage blockquote {
+	background:#efefef;
+	display:block; 
+	margin:5px;
+	font:Georgia, "Times New Roman", Times, serif; 
+	font-style:italic;}
+h1, h2, h3, h4, h5 {
+	color:#A52A2A;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#mainpage h1 {
+	font-size:24px;
+}
+#mainpage h2 {
+	font-size:18px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #B52E10;
+}
+#mainpage h3 {
+	font-size:20px;}
+#mainpage h4 {
+	font-size:18px;}
+#mainpage h5 {
+	font-size:16px;}
+
+/*footer*/
+#footer {
+	margin:0 auto;
+	width:685px;
+	height:20px;
+	padding:10px;
+	color:#FFFFFF;
+	text-align: center;
+	background:#333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	clear: both;
+}
+
+#topbar{
+	height:78px;
+}
+table {
+border-spacing: 5px;
+}
+
+table, th, td {
+border:1px solid red;
+padding: 15px;	
+}
+th {
+text-align: left;
+}
+
+table#t1 {
+width: 75%;
+background-color: yellow;
+border: 1px;
 }
