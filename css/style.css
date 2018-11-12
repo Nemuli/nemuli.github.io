@@ -34,6 +34,7 @@ nav {
     width: 30%;
     background: #a3a375;
     padding: 20px;
+	height: 300px;
 }
 
 /* Style the list inside the menu */
@@ -47,6 +48,7 @@ article {
     padding: 20px;
     width: 70%;
     background-color: #d6d6c2;
+	height: 300px;
 }
 
 /* Clear floats after the columns */
