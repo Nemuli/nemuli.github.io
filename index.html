@@ -58,6 +58,21 @@ function showError(error) {
     }
 }
 	</script>
+	
+<!--Drag and drop-->
+	<script>
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+		function drop(ev) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
   </head>
   <body>
     <div id="wrap">     
@@ -87,26 +102,26 @@ function showError(error) {
 
 <div id="content">
 <div id="mainpage">
-   <h1> Liirum laarum. </h1>
+   <h1> Welcome to my page! </h1>
     <h2> Geo Location</h2>
     <p>Click the button to get your location!</p>
 	
 	<button onclick="getLocation()">Get your location</button>
-    <h2> Liirum laarum. </h2>
-    Liirum laarum.
+    <h2> Lists </h2>
+    These are lists.
     <ul>
       <li><b>Liirum laarum. - </b>Liirum laarum.</li>
         <li><b>Liirum laarum. - </b> Liirum laarum.
           </li>
          <li> <b>Liirum laarum. -</b> Liirum laarum.
            </li> 
-             <li> <bLiirum laarum. - </b> Liirum laarum. </li>
-              <li> <b>Liirum laarum. - </b>
-             Liirum laarum.
-             </li>
-              <li><b> Liirum laarum. - </b> Liirum laarum. </li>
-             <li> <b>Liirum laarum.  </b> Liirum laarum.</li>
       </ul>
+	  
+	 <ol>
+		<li></li>
+		<li></li>
+		<li></li>
+	 </ol>
     <h2 id="music"> Some music from my favorite game </h2>
     <audio controls>
   <source src="audio/ForestInterlude.mp3" type="audio/mpeg">
@@ -167,6 +182,16 @@ Phone: <input type="text" name="phone" /><br/>
 E-mail: <input type="text" name="email" /><br/>
 <input type="submit" value="Submit" />
 </form>
+
+<h2>Drag and drop</h2>
+	<div id ="DD"  ondrop="drop(event)" ondragover="allowDrop(event)">
+		<img src="images/yeti.png" draggable="true" ondragstart="drag(event)" id="drag1" width="50" height="50">
+	</div>
+	<div id ="DD"  ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+<br>
+<br>
+<br>
+<br>
 <h2 id="videos">A very important video</h2>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/QXVeVwM1m4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
